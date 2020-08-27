@@ -117,30 +117,43 @@ The columns can be classified into numerical (int or float types) and categorica
 
 ## Conclusions and Recommendations
 
-In order to have a model that predict the price of house accurate first we will need to clean up our data with the help of Exploratory Data Analysis, where we will be looking at data for completeness through imputation of the null values, convertion of discrete, continous, ordinal and nominal values in variables, identifying which are the outlier.
+In order to have a model that predicts the price of a house accuratly, we will need to first clean up our data with the help of Exploratory Data Analysis. We will be looking at data for completeness through imputation of the null values, converting discrete, continous, ordinal and nominal values in variables. 
 
 #### Feature Exploration
 
-seaborn Heatmap, we will be able to identify which features are of the highest correlation with saleprice.
-pairplot allow us to take a close look at the correlation and the distribution
-boxplot help to identify which are the outlier.
-Which features appear to add the most value to a home? Feature Correlation with Sale price with a significant positive correlation of more than 0.5 1.total square feet (0.84) 2.Overall quality (0.81) 3.External quality (0.72) 4.Ground Living Area (0.72) 5.kitchen quality(0.69) 6.Total basement square feet (0.67) 7.garage area (0.65)
+- With Seaborn Heatmap, we will be able to identify which features are of the highest correlation with saleprice.
+- Pairplot allow us to take a close look at the correlation and the distribution
+- Boxplot help to identify the key Categorical features
+
+Which features appear to add the most value to a home?
+
+Feature Correlation with Sale price with a significant positive correlation of more than 0.5
+1.Total square feet (0.84)
+2.Overall quality (0.81)
+3.External quality (0.72)
+4.Ground Living Area (0.72)
+5.kitchen quality(0.69) 
+6.Total basement square feet (0.67) 
+7.garage area (0.65)
 
 Which features hurt the value of a home the most?
-Feature Correlation with Sale price with a significant negative correlation of less than than -0.6 1.Housing age (-0.58)
+- Feature Correlation with Sale price with a significant negative correlation of less than than -0.6 1.Housing age (-0.58)
 
-What modeling approaches yield the most accurate prediction
+What modeling approaches yield the most accurate prediction?
 
-Dummy variables: Replace catergorical variables
-Ordinal Values: Assigning values to those scaled variables with the use of mapping.
-Train test split
-Comparison between linear regression, lasso and ridge
-Which model has the best prediction? 
+- Dummy variables: Replace catergorical variables
+- Ordinal Values: Assigning values to those scaled variables with the use of mapping.
+- Train test split
+- Comparison between linear regression, lasso and ridge
+- Which model has the best prediction? 
 
-Lasso has the highest accurate prediction whcih are R^2 score of 85% on the test Prediction.
+  Lasso has the highest accurate prediction whcih are R^2 score of 85% on the test Prediction.
 
 What are things that homeowners could improve in their homes to increase the value?
 
-as age of the house can hurt the value of a home hence, remodelling might come in handy if homeowners are planning to increase the value.
-Other Recommendation Rather than only looking at the features of a property, there are other factors that might affect the sale price. This to consider to further investigate that may help to predict the price of property even more accurately.
+ - As age of the house can hurt the value of a home hence, remodelling might come in handy if homeowners are planning to
+    increase the  value.
+-   Other Recommendation Rather than only looking at the features of a property, there are other factors that might affect the sale price. 
+
+ This to consider to further investigate that may help to predict the price of property even more accurately.
 For instance, a recession or a pandemic might cause a drop in the sale price due to supply and demand.

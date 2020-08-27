@@ -23,94 +23,95 @@ Total Square feet area
 
 
 
-## Data Dictionary 
+## 2 . Data Dictionary 
 
 
 Data consist of 2051 rows of observations that is broken down into 80 separate information of a housing with sale price included.
 The columns can be classified into numerical (int or float types) and categorical (object type). Categorical features can be further subdivided into descriptive (eg. Neighbourhood and MS Zoning) and ordinal (eg. ExterQual and ExterCond).
 
-Feature	Variable type	Datatype	Description
-id	Discrete	int	Observation number
-pid	Nominal	int	Parcel identification number
-ms_subclass	Nominal	int	Identifies the type of dwelling involved in the sale
-ms_zoning	Nominal	object	Identifies the general zoning classification of the sale
-lot_frontage	Continuous	float	Linear feet of street connected to property
-lot_area	Continuous	int	Lot size in square feet
-street	Nominal	object	Type of road access to property
-alley	Nominal	object	Type of alley access to property
-lot_shape	Ordinal	object	General shape of property
-land_contour	Nominal	object	Flatness of the property
-utilities	Ordinal	object	Type of utilities available
-lot_config	Nominal	object	Lot configuration
-land_slope	Ordinal	object	Slope of property
-neighborhood	Nominal	object	Physical locations within Ames city limits
-condition_1	Nominal	object	Proximity to various conditions
-condition_2	Nominal	object	Proximity to various conditions (if more than one is present)
-bldg_type	Nominal	object	Type of dwelling
-house_style	Nominal	object	Style of dwelling
-overall_qual	Ordinal	int	Rates the overall material and finish of the house
-overall_cond	Ordinal	int	Rates the overall condition of the house
-year_built	Discrete	int	Original construction date
-year_remod/add	Discrete	int	Remodel date (same as construction date if no remodeling or additions)
-roof_style	Nominal	object	Type of roof
-roof_matl	Nominal	object	Roof material
-exterior_1st	Nominal	object	Exterior covering on house
-exterior_2nd	Nominal	object	Exterior covering on house (if more than one material)
-mas_vnr_type	Nominal	object	Masonry veneer type
-mas_vnr_area	Continuous	float	Masonry veneer area in square feet
-exter_qual	Ordinal	object	Evaluates the quality of the material on the exterior
-exter_cond	Ordinal	object	Evaluates the present condition of the material on the exterior
-foundation	Nominal	object	Type of foundation
-bsmt_qual	Ordinal	object	Evaluates the height of the basement
-bsmt_cond	Ordinal	object	Evaluates the general condition of the basement
-bsmt_exposure	Ordinal	object	Refers to walkout or garden level walls
-bsmtfin_type_1	Ordinal	object	Rating of basement finished area
-bsmtfin_sf_1	Continuous	float	Type 1 finished square feet
-bsmtfin_type_2	Ordinal	object	Rating of basement finished area (if multiple types)
-bsmtfin_sf_2	Continuous	float	Type 1 finished square feet
-bsmt_unf_sf	Continuous	float	Unfinished square feet of basement area
-total_bsmt_sf	Continuous	float	Total square feet of basement area
-heating	Nominal	object	Type of heating
-heating_qc	Ordinal	object	Heating quality and condition
-central_air	Nominal	object	Central air conditioning
-electrical	Ordinal	object	Electrical system
-1st_flr_sf	Continuous	int	First Floor square feet
-2nd_flr_sf	Continuous	int	Second floor square feet
-low_qual_fin_sf	Continuous	int	Low quality finished square feet (all floors)
-gr_liv_area	Continuous	int	Above grade (ground) living area square feet
-bsmt_full_bath	Discrete	float	Basement full bathrooms
-bsmt_half_bath	Discrete	float	Basement half bathrooms
-full_bath	Discrete	int	Full bathrooms above grade
-half_bath	Discrete	int	Half baths above grade
-bedroom_abvgr	Discrete	int	Bedrooms above grade (does NOT include basement bedrooms)
-kitchen_abvgr	Discrete	int	Kitchens above grade
-kitchen_qual	Ordinal	object	Kitchen quality
-totrms_abvgrd	Discrete	int	Total rooms above grade (does not include bathrooms)
-functional	Ordinal	object	Home functionality (Assume typical unless deductions are warranted)
-fireplaces	Discrete	int	Number of fireplaces
-fireplace_qu	Ordinal	object	Fireplace quality
-garage_type	Nominal	object	Garage location
-garage_yr_blt	Discrete	float	Year garage was built
-garage_finish	Ordinal	object	Interior finish of the garage
-garage_cars	Discrete	float	Size of garage in car capacity
-garage_area	Continuous	float	Size of garage in square feet
-garage_qual	Ordinal	object	Garage quality
-garage_cond	Ordinal	object	Garage condition
-paved_drive	Ordinal	object	Paved driveway
-wood_deck_sf	Continuous	int	Wood deck area in square feet
-open_porch_sf	Continuous	int	Open porch area in square feet
-enclosed_porch	Continuous	int	Enclosed porch area in square feet
-3ssn_porch	Continuous	int	Three season porch area in square feet
-screen_porch	Continuous	int	Screen porch area in square feet
-pool_area	Continuous	int	Pool area in square feet
-pool_qc	Ordinal	object	Pool quality
-fence	Ordinal	object	Fence quality
-misc_feature	Nominal	object	Miscellaneous feature not covered in other categories
-misc_val	Continuous	int	$Value of miscellaneous feature
-mo_sold	Discrete	int	Month Sold (MM)
-yr_sold	Discrete	int	Year Sold (YYYY)
-sale_type	Nominal	object	Type of sale
-saleprice	Continuous	int	Sale price $$
+|Feature|Variable type|Datatype|Description|
+|:------|:-------|:-------|:-----|
+|id|Discrete|int|Observation number|
+|pid|Nominal|int|Parcel identification number|
+|ms_subclass|Nominal|int|Identifies the type of dwelling involved in the sale|
+|ms_zoning|Nominal|object|Identifies the general zoning classification of the sale|
+|lot_frontage|Continuous|float|Linear feet of street connected to property
+|lot_area|Continuous|int|Lot size in square feet|
+|street|Nominal|object|Type of road access to property|
+|alley|Nominal|object|Type of alley access to property|
+|lot_shape|Ordinal|object|General shape of property|
+|land_contour|Nominal|object|Flatness of the property|
+|utilities|Ordinal|object|Type of utilities available|
+|lot_config|Nominal|object|Lot configuration|
+|land_slope|Ordinal|object|Slope of property|
+|neighborhood|Nominal|object|Physical locations within Ames city limits|
+|condition_1|Nominal|object|Proximity to various conditions|
+|condition_2|Nominal|object|Proximity to various conditions (if more than one is present)|
+|bldg_type|Nominal|object|Type of dwelling|
+|house_style|Nominal|object|Style of dwelling|
+|overall_qual|Ordinal|int|Rates the overall material and finish of the house|
+|overall_cond|Ordinal|int|Rates the overall condition of the house|
+|year_built|Discrete|int|Original construction date|
+|year_remod/add|Discrete|int|Remodel date (same as construction date if no remodeling or additions)|
+|roof_style|Nominal|object|Type of roof|
+|roof_matl|Nominal|object|Roof material|
+|exterior_1st|Nominal|object|Exterior covering on house|
+|exterior_2nd|Nominal|object|Exterior covering on house (if more than one material)|
+|mas_vnr_type|Nominal|object|Masonry veneer type|
+|mas_vnr_area|Continuous|float|Masonry veneer area in square feet|
+|exter_qual|Ordinal|object|Evaluates the quality of the material on the exterior|
+|exter_cond|Ordinal|object|Evaluates the present condition of the material on the exterior|
+|foundation|Nominal|object|Type of foundation|
+|bsmt_qual|Ordinal|object|Evaluates the height of the basement|
+|bsmt_cond|Ordinal|object|Evaluates the general condition of the basement|
+|bsmt_exposure|Ordinal|object|Refers to walkout or garden level walls|
+|bsmtfin_type_1|Ordinal|object|Rating of basement finished area|
+|bsmtfin_sf_1|Continuous|float|Type 1 finished square feet|
+|bsmtfin_type_2|Ordinal|object|Rating of basement finished area (if multiple types)|
+|bsmtfin_sf_2|Continuous|float|Type 1 finished square feet|
+|bsmt_unf_sf|Continuous|float|Unfinished square feet of basement area|
+|total_bsmt_sf|Continuous|float|Total square feet of basement area|
+|heating|Nominal|object|Type of heating|
+|heating_qc|Ordinal|object|Heating quality and condition|
+|central_air|Nominal|object|Central air conditioning
+|electrical|Ordinal|object|Electrical system|
+|1st_flr_sf|Continuous|int|First Floor square feet|
+|2nd_flr_sf|Continuous|int|Second floor square feet|
+|low_qual_fin_sf|Continuous|int|Low quality finished square feet (all floors)|
+|gr_liv_area|Continuous|int|Above grade (ground) living area square feet
+|bsmt_full_bath|Discrete|float|Basement full bathrooms|
+|bsmt_half_bath|Discrete|float|Basement half bathrooms|
+|full_bath|Discrete|int|Full bathrooms above grade|
+|half_bath|Discrete|int|Half baths above grade|
+|bedroom_abvgr|Discrete|int|Bedrooms above grade (does NOT include basement bedrooms)|
+|kitchen_abvgr|Discrete|int|Kitchens above grade|
+|kitchen_qual|Ordinal|object|Kitchen quality|
+|totrms_abvgrd|Discrete|int|Total rooms above grade (does not include bathrooms)|
+|functional|Ordinal|object|Home functionality (Assume typical unless deductions are warranted)|
+|fireplaces|Discrete|int|Number of fireplaces|
+|fireplace_qu|Ordinal|object|Fireplace quality|
+|garage_type|Nominal|object|Garage location|
+|garage_yr_blt|Discrete|float|Year garage was built|
+|garage_finish|Ordinal|object|Interior finish of the garage|
+|garage_cars|Discrete|float|Size of garage in car capacity|
+|garage_area|Continuous|float|Size of garage in square feet|
+|garage_qual|Ordinal|object|Garage quality|
+|garage_cond|Ordinal|object|Garage condition|
+|paved_drive|Ordinal|object|Paved driveway|
+|wood_deck_sf|Continuous|int|Wood deck area in square feet|
+|open_porch_sf|Continuous|int|Open porch area in square feet|
+|enclosed_porch|Continuous|int|Enclosed porch area in square feet|
+|3ssn_porch|Continuous|int|Three season porch area in square feet|
+|screen_porch|Continuous|int|Screen porch area in square feet|
+|pool_area|Continuous|int|Pool area in square feet|
+|pool_qc|Ordinal|object|Pool quality|
+|fence|Ordinal|object|Fence quality|
+|misc_feature|Nominal|object|Miscellaneous feature not covered in other categories|
+|misc_val|Continuous|int|$Value of miscellaneous feature|
+|mo_sold|Discrete|int|Month Sold (MM)|
+|yr_sold|Discrete|int|Year Sold (YYYY)|
+|sale_type|Nominal|object|Type of sale|
+|saleprice|Continuous|int|Sale price $$|
 
 
 

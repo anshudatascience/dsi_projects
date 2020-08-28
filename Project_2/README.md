@@ -128,32 +128,44 @@ In order to have a model that predicts the price of a house accuratly, we will n
 Which features appear to add the most value to a home?
 
 Feature Correlation with Sale price with a significant positive correlation of more than 0.5
-1.Total square feet (0.84)
-2.Overall quality (0.81)
-3.External quality (0.72)
-4.Ground Living Area (0.72)
-5.kitchen quality(0.69) 
-6.Total basement square feet (0.67) 
-7.garage area (0.65)
+
+ - Overall quality (0.81)
+ - Total square feet (0.78)
+ - External quality (0.71)
+ - Ground Living Area (0.7)
+ - kitchen quality(0.69) 
+ -  garage area (0.65)
 
 Which features hurt the value of a home the most?
 - Feature Correlation with Sale price with a significant negative correlation of less than than -0.6 1.Housing age (-0.58)
 
 What modeling approaches yield the most accurate prediction?
 
-- Dummy variables: Replace catergorical variables
+ Below are steps to find the accurate prediction:
+- Genrating Dummy variables: Replace catergorical variables
 - Ordinal Values: Assigning values to those scaled variables with the use of mapping.
 - Train test split
-- Comparison between linear regression, lasso and ridge
-- Which model has the best prediction? 
+- Comparison between linear regression, lasso and Ridge Regression Model
 
-  Lasso has the highest accurate prediction whcih are R^2 score of 85% on the test Prediction.
+Which Categorical features appear to add the most value to a home
+
+- Neighbourhood_NridgHt
+- Neighbourhood_StoneBr
+- Neighbourhood_NoRidge
+- Sale-type_new
+- House Style_1stStory
+
+
+Which model has the best prediction? 
+  - Lasso has the highest accurate prediction whcih are R^2 score of 85% on the test Prediction.Lasso helps in feature      selection as it tends to make coefficients to absolute zero as compared to Ridge which never sets the value of coefficient to absolute zero. 
 
 What are things that homeowners could improve in their homes to increase the value?
 
  - As age of the house can hurt the value of a home hence, remodelling might come in handy if homeowners are planning to
     increase the  value.
--   Other Recommendation Rather than only looking at the features of a property, there are other factors that might affect the sale price. 
+ - Other Recommendation Rather than only looking at the features of a property, there are other factors that might affect      the sale price.
 
  This to consider to further investigate that may help to predict the price of property even more accurately.
 For instance, a recession or a pandemic might cause a drop in the sale price due to supply and demand.
+
+Linear regression allows us to be able to predict the price of a house using various factors. Additionally, it enables one to be able to measure the influence of a factor onto the price of a house, how strong of an influence it has on the price as well as the direction of influence, positive or negative.

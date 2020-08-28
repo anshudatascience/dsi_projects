@@ -1,11 +1,15 @@
 # Project 2 - Ames Housing Data and Kaggle Challenge
 
 
-## 1. Executive Summary:
+## 1. Problem Statement:
+
+The  objective is to predict the sales price of a home using Ames Housing Dataset.Based on state data, a model will be created to estimate the final housing Sale Price. There is an opportunity to use data science modeling techniques to prepare regression modelling.
+
+## 2. Executive Summary:
 Using the Ames Housing Dataset that is available on Kaggle, we want to identify which features are the best predictors of housing price and create a regression model that will help us make predictions with the best root mean square value. The Kaggle challenge offers a train.csv for us to to train our model with, and a test.csv which we will clean and fit the model onto, in order to make our predictions. A csv of the predictions is ultimately uploaded to the Kaggle challenge for scoring. The model will be tuned closely to the Ames Housing dataset, and we might be able to use our findings from the process to understand what are some key predictors we can use in predicting prices for houses in the United States. However, given that this data set has some features that are very specific to Ames, Iowa (e.g. neighborhood), it will not be perfect fit for other housing data in the U.S. Steps to follow for this projects:
 
 - Understanding the Data
-- Exploratory Data analysis
+- Exploratory Data analysis - Saleprice
 - Clean the Null values
 - EDA analysis and Feature creation
 - Convert Categorical to numerical data
@@ -23,7 +27,7 @@ Total Square feet area
 
 
 
-## 2 . Data Dictionary 
+## 3 . Data Dictionary 
 
 
 Data consist of 2051 rows of observations that is broken down into 80 separate information of a housing with sale price included.
@@ -115,7 +119,7 @@ The columns can be classified into numerical (int or float types) and categorica
 
 
 
-## Conclusions and Recommendations
+## 4. Conclusions and Recommendations
 
 In order to have a model that predicts the price of a house accuratly, we will need to first clean up our data with the help of Exploratory Data Analysis. We will be looking at data for completeness through imputation of the null values, converting discrete, continous, ordinal and nominal values in variables. 
 
@@ -154,10 +158,11 @@ Which Categorical features appear to add the most value to a home
 - Neighbourhood_NoRidge
 - Sale-type_new
 - House Style_1stStory
+- Foundation_Pcon
 
 
 Which model has the best prediction? 
-  - Lasso has the highest accurate prediction whcih are R^2 score of 85% on the test Prediction.Lasso helps in feature      selection as it tends to make coefficients to absolute zero as compared to Ridge which never sets the value of coefficient to absolute zero. 
+   - Ridge and Lasso  are good prediction whcih has R^2 score and RMSE(Root mean square error) on the test Prediction.Lasso helps in feature selection as it tends to make coefficients to absolute zero as compared to Ridge which never sets the value of coefficient to absolute zero.
 
 What are things that homeowners could improve in their homes to increase the value?
 

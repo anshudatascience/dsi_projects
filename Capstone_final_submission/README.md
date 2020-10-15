@@ -9,7 +9,8 @@
  -Job classification is the process to determine the relative rank of different jobs in an organization. This is important since the   hierarchical position a job is classified as underlies many HR decisions. A good job classification leads to fair, equitable,senior jobs have higher requirements in terms of performance and capabilities, and enables succession planning to more senior roles.Classification involves taking the characteristics of a job and categorizing it based on the classifications, input which we will take is the job description.
 
   Data science has been called “the sexiest job of the 21st century” — more business leaders in all industry are hiring data scientists into environments where we can be effective. 
-Data Science team has been asked to classify the Data Scientist job based on the senority. The job description of 10,000 Data Scientist role has been provided to understand what could be the key terms should be mentioned on Data Scientist position. What all are the overlaps and differences in the Job description. Topic modelling has also been performed to understand the key topics in the job description. 
+Data Science team has been asked to classify the Data Scientist job based on the senority. The job description of 10,000 Data Scientist role has been provided to understand what could be the key terms should be mentioned on Data Scientist position. What are the similarities and differences are there in the Job description. Topic modelling has also been performed to understand the key topics in the job description. 
+
  
  ##  Executive Summary
 
@@ -25,6 +26,10 @@ Manager/Director Data Scientist should be able to understand the product life cy
 - `'Job_Classification_Data_Cleaning_Pre_Processing'`
 - `'Job Classification_Text_cleaning_EDA'`
 - `'Classification_Modeling-Conclusion'`
+
+## Addition Exploratory Notebook 
+ - `'Additional_Exploration_Classification_CATEGORY'`
+ `'Additional_Exploration_Topic_modelling_gensim'`
 
 
 ## Data Dictionary
@@ -84,10 +89,19 @@ Python,R, SQL,Algorithm, Data Visualtization,Hadoop, Jave are top skills require
    - DATA SCIENTIST focus more on problem statement, statistical models and product development helping business serve its customer better.
    - SENIOR DATA SCIENTIST are more focus on product development and statistical model to come up with business solution.
    - MANAGER DS are focusing more on client management and product development.
+   
+[**Topic Modeling**]
+
+ With some exploration on unsupervised topic model managed to get some topics to consider on whole corpus of Job description:
+- Product and Customer focus(product" + *"develop" + *"problem" + "customer" + *"statistical" + *"drive+ )
+- Technology and Engineering Focus(development" +*"technology" + *"security" + '"intelligence" + "software" + "language" +        "processing" + "engineering" + "deep"'),
+- Employee related information( "employment" + "disability" + "applicant" +"opportunity" +"gender" + "sexual")
+- Key skill set requirement(support" +*"project" + "position" + "provide" + "information" + *"research" '+*"management" +      *"develop"')
+
 
 ### |Inference|:
 
-The dataset availble has limitation of defining right class. The top feature predictors are very similar. Experience, managing, year experience are some of the top predictors of the positive class. Random forest with balanced weight class performed well with 0.82 accuracy and less overfitted compare to Logistic regression.
+The dataset availble has limitation on predicting positive class. The top feature predictors are very similar. Experience, managing, year experience are some of the top predictors of the positive class. Random forest with balanced weight class performed well with 0.82 accuracy and less overfitted compare to Logistic regression.
 
 ### |Recommendation|:
 

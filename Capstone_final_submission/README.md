@@ -21,18 +21,17 @@ Junior Data Scientists don’t have experience in engineering complex product so
 Mid -Senior Data Scientists should be able to frame Data Science problems. Good candidates have great insights from past Data Science experiences.They are focussing more of product development
 Manager/Director Data Scientist should be able to understand the product life cycle and focus more on managing client expectations.
 
-
-## Files 
+## Reference Note book
 - `'Job_Classification_Data_Cleaning_Pre_Processing'`
 - `'Job Classification_Text_cleaning_EDA'`
 - `'Classification_Modeling-Conclusion'`
 
+
 ## Data Dictionary
 
-[**Data set was taken from Dataworld website**](https://data.world/jobspikr/10000-data-scientist-job-postings-from-the-usa).
+[**Dataworld**](https://data.world/jobspikr/10000-data-scientist-job-postings-from-the-usa).
 
 |Feature|Variable type||Description|
-
 |:----|:---|:---|:---|
 |0   |crawl_timestamp |      10000 non-null|  object |
 | 1  | url             |      10000 non-null|  object |
@@ -72,6 +71,7 @@ The goal here is to classify the Data Scientist Job position based on Seniority 
 In this problem we are dealing with an unbalanced class classification problem where the baseline score is 60% due to unbalanced data. In case of unbalanced date, there is a need to upscale the minority class to get the right prediction. We have used  weighted scale techniques to deal with the unbalanced data.
 
 ### From EDA:
+
 Average number of years of experince is 4+ years
 Masters and Phd degree are recommended as they are coming more than 50% and 30%
 California, Virgina and Washington are some of the states where there is high demands of Data scientist
@@ -81,7 +81,7 @@ Python,R, SQL,Algorithm, Data Visualtization,Hadoop, Jave are top skills require
 - Multiclass model on Seniority of position(Word Cloud)
 
    - ASSOCIATE/JUNIOR DATA SCIENTIST needs to focus on project and statistical modeling and techonology
-   - DATA SCIENTIST focus more on problem statement, statistical models and product development helping business   serve its customer better.
+   - DATA SCIENTIST focus more on problem statement, statistical models and product development helping business serve its customer better.
    - SENIOR DATA SCIENTIST are more focus on product development and statistical model to come up with business solution.
    - MANAGER DS are focusing more on client management and product development.
 
@@ -96,8 +96,8 @@ Some more feature engineering to take affect of industry for better prediction.
 look for more dataset or try scrapping the job description
 (Got inspiration from below links) 
 
-('https://www.kaggle.com/ryanvu/data-science-job-market-eda-and-text-analysis'),
+[**Kaggle**]('https://www.kaggle.com/ryanvu/data-science-job-market-eda-and-text-analysis'),
 
-'https://neptune.ai/blog/exploratory-data-analysis-natural-language-processing-tools',
+[**NLP**]('https://neptune.ai/blog/exploratory-data-analysis-natural-language-processing-tools')
 
-'https://www.datascienceweekly.org/articles/the-difference-between-junior-mid-level-and-senior-data-scientist-jobs'
+[**Seniority**]('https://www.datascienceweekly.org/articles/the-difference-between-junior-mid-level-and-senior-data-scientist-jobs')
